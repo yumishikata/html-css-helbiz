@@ -18,7 +18,11 @@ body {
   margin: 0 auto;
 }
 
-.header_fix {
+.lg-display_none {
+  display: none;
+}
+
+header .header_fix {
   line-height: 80px;
   height: 80px;
   background-color: white;
@@ -28,24 +32,28 @@ body {
   right: 0;
   bottom: 0;
   z-index: 9999;
-
 }
-.header_fix nav {
+header .header_fix nav {
   text-align: right;
 }
-.header_fix nav li {
+header .header_fix nav li {
   display: inline;
   list-style: none;
   padding-left: 10px;
 }
-.header_fix nav li a {
+header .header_fix nav li a {
   text-decoration: none;
   letter-spacing: .1em;
   color: black;
   font-size: 70%;
 }
+header .header_fix i {
+  font-size: 200%;
+  line-height: 80px;
+  padding-left: 30px;
+}
 
-.jumbotron {
+header .jumbotron {
   margin-top: 80px;
   background-image: url(../img/hero-bg.jpg);
   background-size: cover;
@@ -54,7 +62,8 @@ body {
   height: 500px;
   position: relative;
 }
-.jumbotron .container {
+header .jumbotron .container {
+  width: 100%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -62,11 +71,11 @@ body {
   color: white;
   text-align: center;
 }
-.jumbotron .container h1 {
+header .jumbotron .container h1 {
   font-size: 300%;
   font-weight: 500;
 }
-.jumbotron .container p {
+header .jumbotron .container p {
   margin: 15px 0;
 }
 
@@ -93,5 +102,65 @@ main .monopattini a {
   text-decoration: none;
 }
 main .monopattini img {
-  height: 400px;
+  width: 50%;
+  /* height: 400px; */
+}
+
+main .signore .foto_signore img {
+  width: 100%;
+}
+main .signore .container [class*="col-"] {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  height: 30vh;
+  position: relative;
+}
+main .signore .container [class*="col-"] div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+}
+main .signore .container img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 500px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px) {
+  .header_fix .container {
+    width: 100%;
+  }
+  header .jumbotron .container h1 {
+    font-size: 2em;
+  }
+  .header_fix .logo {
+    padding-left: 10px;
+  }
+  .md-display_block {
+    display: block;
+  }
+  .md-display_none {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header_fix .container {
+    width: 100%;
+  }
+  header .jumbotron .container h1 {
+    font-size: 2em;
+  }
+  .header_fix .logo {
+    padding-left: 10px;
+  }
+  .xs-display_block {
+    display: block;
+  }
+  .xs-display_none {
+    display: none;
+  }
 }
