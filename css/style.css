@@ -1,0 +1,58 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  background-color: white;
+}
+
+.width_80 {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header_fix {
+  line-height: 80px;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header_fix nav {
+  text-align: right;
+}
+.header_fix nav li {
+  display: inline;
+  list-style: none;
+  padding-left: 13px;
+}
+.header_fix nav li a {
+  text-decoration: none;
+  color: black;
+  font-size: 70%;
+}
+
+.jumbotron {
+  margin-top: 80px;
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 500px;
+  position: relative;
+}
+.jumbotron .container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50% , -50%);
+  color: white;
+  text-align: center;
+}
+.jumbotron .container h1 {
+  font-size: 300%;
+  font-weight: 500;
+}
+.jumbotron .container p {
+  margin: 15px 0;
+}
