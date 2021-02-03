@@ -95,6 +95,7 @@ main .monopattini {
 main .monopattini .width_95 {
   background-color: #fafafa;
   padding: 50px;
+  /* height: 500px; */
 }
 main .monopattini h2 {
   font-weight: 400;
@@ -109,8 +110,8 @@ main .monopattini a {
   text-decoration: none;
 }
 main .monopattini img {
-  width: 50%;
-  /* height: 400px; */
+  width: 70%;
+  /* height: 80%; */
 }
 
 main .signore .foto_signore img {
