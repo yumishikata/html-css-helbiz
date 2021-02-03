@@ -52,6 +52,13 @@ header .header_fix i {
   line-height: 80px;
   padding-left: 30px;
 }
+header .header_fix .menu_lang li {
+  text-align: right;
+}
+header .header_fix .menu_lang li:not(:nth-last-of-type(1)) {
+  border-right: 1px solid black;
+  padding-right: 10px;
+}
 
 header .jumbotron {
   margin-top: 80px;
@@ -73,7 +80,7 @@ header .jumbotron .container {
 }
 header .jumbotron .container h1 {
   font-size: 300%;
-  font-weight: 500;
+  font-weight: 400;
 }
 header .jumbotron .container p {
   margin: 15px 0;
@@ -90,7 +97,7 @@ main .monopattini .width_95 {
   padding: 50px;
 }
 main .monopattini h2 {
-  font-weight: 500;
+  font-weight: 400;
 }
 main .monopattini p {
   margin: 15px 0;
@@ -108,6 +115,13 @@ main .monopattini img {
 
 main .signore .foto_signore img {
   width: 100%;
+}
+main .signore .foto_signore {
+  height: 400px;
+  background-image: url(../img/HelbizBanner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
 }
 main .signore .container [class*="col-"] {
   margin-top: 50px;
